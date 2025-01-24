@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\S4.Repositorio\S4.Repositorio.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="S4.Comunes">
+      <HintPath>..\..\..\S4Comunes\S4.Comunes\S4.Comunes\bin\Debug\net8.0\S4.Comunes.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
